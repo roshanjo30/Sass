@@ -1,0 +1,36 @@
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+    align-items: center;
+    
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.productinfo{
+    display: flex;
+    flex-direction: column;
+    
+    p{
+        font-size: 10px;
+    }
+
+    .info2{
+        font-size: 8px;
+        color: rgb(152, 149, 149)
+    }
+}
+
+
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
