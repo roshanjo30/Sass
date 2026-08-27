@@ -5,6 +5,10 @@
   "author": "author",
   "license": "MIT",
   "homepage": "http://sitename.com",
+  "engines": {
+    "node": "16.x",
+    "npm": "8.x"
+  },
   "repository": {
     "type": "git",
     "url": ""
