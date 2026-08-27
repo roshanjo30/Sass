@@ -13,6 +13,7 @@
     "start": "cross-env NODE_OPTIONS=--no-deprecation gulp",
     "dev": "cross-env NODE_OPTIONS=--no-deprecation gulp serve",
     "prod": "cross-env NODE_ENV=prod NODE_OPTIONS=--no-deprecation gulp",
+    "build": "cross-env NODE_ENV=prod NODE_OPTIONS=--no-deprecation gulp",
     "deploy": "npm run prod && gh-pages -d dist"
   },
   "devDependencies": {
