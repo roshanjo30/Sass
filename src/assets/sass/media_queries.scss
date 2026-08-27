@@ -1,0 +1,59 @@
+@media (min-width: 768px) {
+
+.topbar{
+    img{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.topright{
+   
+    img{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.searchbar{
+    width: 120px;
+    height: 20px;
+
+   
+}
+.bar{
+
+    p{
+        font-size: 23px;
+    }
+
+}
+
+.sort{
+    font-size: 13px;
+}
+
+.products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+.productinfo{
+    p{
+        font-size: 15px;
+    }
+    .info2{
+        font-size: 12px;
+    }
+}
+
+
+
+}
+
+
+
+@media (min-width: 1440px) {
+    .products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

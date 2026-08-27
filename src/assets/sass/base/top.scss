@@ -18,8 +18,10 @@ body{
 
 .topright{
     display: flex;
+    gap: 13px;
     align-items: center;
     justify-content:flex-start
+    
     form{
         width: 300px
     }

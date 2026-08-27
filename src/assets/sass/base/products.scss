@@ -1,3 +1,8 @@
+%flex {
+    display: flex;
+    flex-direction: column;
+  }
+
 .products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -13,9 +18,7 @@
 }
 
 .productinfo{
-    display: flex;
-    flex-direction: column;
-    
+    @extend %flex;
     p{
         font-size: 10px;
     }
@@ -29,8 +32,8 @@
 
 
 .product {
-    display: flex;
-    flex-direction: column;
+    
     justify-content: space-around;
+    transition: 0.3s ;
 
 }
