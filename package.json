@@ -9,6 +9,11 @@
     "node": "16.x",
     "npm": "8.x"
   },
+  "overrides": {
+    "gulp-cssmin": {
+      "clean-css": "4.2.4"
+    }
+  },
   "repository": {
     "type": "git",
     "url": ""
@@ -48,6 +53,7 @@
   "directories": {
     "doc": "docs"
   },
+
   "dependencies": {},
   "keywords": [
     "nothing"
