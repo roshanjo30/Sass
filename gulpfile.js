@@ -177,7 +177,6 @@ function del() {
 }
 
 exports.html = html;
-exports.ie_css = ie_css;
 exports.app_css = app_css;
 
 exports.plugins_css = plugins_css;
