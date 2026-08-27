@@ -6,8 +6,7 @@
   "license": "MIT",
   "homepage": "http://sitename.com",
   "engines": {
-    "node": "16.x",
-    "npm": "8.x"
+   "node": "24.x"
   },
   "overrides": {
     "gulp-cssmin": {
