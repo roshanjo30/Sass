@@ -46,14 +46,24 @@
     }
 }
 
-
+.load{ 
+    
+    button{
+        height: 35px;
+        width: 150px;
+        font-size: 12px;
+    }
 
 }
 
+
+}
 
 
 @media (min-width: 1440px) {
     .products {
         grid-template-columns: repeat(4, 1fr);
     }
+
+
 }

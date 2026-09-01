@@ -44,6 +44,15 @@ function html() {
         .pipe(gulp.dest('dist'));
 }
 
+function ie_css() {
+  return gulp.src('src/assets/sass/ie.scss')
+      .pipe(gulpIf(!isProd, sourcemaps.init()))
+      .pipe(sass(sassOptions).on('error', sass.logError))
+      .pipe(gulpIf(!isProd, sourcemaps.write()))
+      .pipe(gulpIf(isProd, cssmin()))
+      .pipe(concat('ie.min.css'))
+      .pipe(gulp.dest('dist/assets/css/'));
+}
 
 function app_css() {
     return gulp.src('src/assets/sass/app.scss')
@@ -168,6 +177,7 @@ function del() {
 }
 
 exports.html = html;
+exports.ie_css = ie_css;
 exports.app_css = app_css;
 
 exports.plugins_css = plugins_css;
@@ -177,5 +187,5 @@ exports.plugins_js = plugins_js;
 exports.fonts = fonts;
 
 exports.del = del;
-exports.serve = gulp.parallel(html, app_css, plugins_css, jquery_js, app_js, plugins_js, fonts, img, uploads, img_webp, uploads_webp, watchFiles, serve);
-exports.default = gulp.series(del, html, app_css, plugins_css, jquery_js, app_js, plugins_js, fonts, img, uploads, img_webp, uploads_webp);
+exports.serve = gulp.parallel(html, ie_css, app_css, plugins_css, jquery_js, app_js, plugins_js, fonts, img, uploads, img_webp, uploads_webp, watchFiles, serve);
+exports.default = gulp.series(del, html, ie_css, app_css, plugins_css, jquery_js, app_js, plugins_js, fonts, img, uploads, img_webp, uploads_webp);
